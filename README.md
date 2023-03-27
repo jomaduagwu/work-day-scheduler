@@ -1,10 +1,10 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+## Description
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+A simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+
 
 ## User Story
 
@@ -34,66 +34,40 @@ THEN the saved events persist
 
 The following animation demonstrates the application functionality:
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
 
-## Grading Requirements
+![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/images/work-day-scheduler-screenshot.png.)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Tasks Completed
 
-This Challenge is graded based on the following criteria:
+* wrapped the code in a call to jQuery to ensure the code isn't run until all elements in the html are rendered in the browser
+* added a listener for click events on the save button
+* added code to compare the time-block to the current hour and apply teh past, present, or future class
+* added code to display any user input saved in local storage in the text area elements
+* added code to display the current date in the header
 
-### Technical Acceptance Criteria: 40%
+## Installation
+N/A
 
-* Satisfies all of the above acceptance criteria plus the following:
+## Usage
+When the page is loaded, the current day is displayed in the header of the calender. Time blocks for 9AM to 5PM are displayed on the page, color-coded to indivate whether the time block is in the past (gray), present (red), or future (green). User can add events to each time block and save them to local storage. When the page is refreshed, the saved events are displayed on the page.
 
-  * Uses a date utility library to work with date and time
+Link to deployed website - https://jomaduagwu.github.io/work-day-scheduler/
 
-### Deployment: 32%
+## Credits
+Starter code was cloned from Georgeyoo https://github.com/coding-boot-camp/crispy-octo-meme.git
 
-* Application deployed at live URL
+## License
+Please refer to the LICENSE in the repo.
 
-* Application loads with no errors
+## Badges
+N/A
 
-* Application GitHub URL submitted
+## Features
+* Bootstrap 
+* Google Fonts
+* Font Awesome
+* jQuery
+* day.js
 
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the Challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Tests
+N/A
